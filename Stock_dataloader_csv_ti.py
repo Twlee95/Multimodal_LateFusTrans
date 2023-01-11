@@ -15,9 +15,9 @@ class stock_csv_read:
         self.stock_data = self.data_loader()
         
     def data_loader(self):
-        stock_data = pd.read_csv("C:/Users/lab/Desktop/Multimodal_Transformer/data/kdd17/price_long_50/"  + self.data ,header=0)
-        modality2_data = pd.read_csv(r"C:\Users\lab\Desktop\Multimodal_Transformer\data\kdd17\modality2.csv",header=0)
-        modality3_data = pd.read_csv(r"C:\Users\lab\Desktop\Multimodal_Transformer\data\kdd17\modality3.csv",header=0)
+        stock_data = pd.read_csv("C:/Users/lab/Desktop/Multimodal_Transformer_map\data/kdd17/price_long_50_/"  + self.data ,header=0)
+        modality2_data = pd.read_csv(r"C:\Users\lab\Desktop\Multimodal_Transformer_map\data\kdd17\modality2.csv",header=0)
+        modality3_data = pd.read_csv(r"C:\Users\lab\Desktop\Multimodal_Transformer_map\data\kdd17\modality3.csv",header=0)
 
         # modality3_data['Date'] = pd.to_datetime(modality3_data["Date"])
         # modality3_data['Date'] = modality3_data["Date"].dt.strftime('%m/%d/%Y')
